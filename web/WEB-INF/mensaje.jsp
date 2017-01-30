@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Director no encontrado</title>
 </head>
 <body>
-
+	<form method="post" action="controlador">
+		
+		<input type="submit" name="accion" value="Nueva consulta"/>
+	</form>
 </body>
 </html>
