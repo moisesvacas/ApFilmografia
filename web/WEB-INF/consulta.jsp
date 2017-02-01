@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Consultar Director</title>
+<title>Introducir Director</title>
 </head>
 <body>
 	<form method="post" action="controlador">
@@ -12,7 +12,7 @@
 Este input tengo que cambiarlo por un select que me de una lista de directores.
 		<input type="text" name="director" value="director"/>
 		<br>
-		<input type="submit" name="accion" value="Consultar"/>
+		<input type="submit" name="accion" value="consultar"/>
 
 	</form>
 </body>

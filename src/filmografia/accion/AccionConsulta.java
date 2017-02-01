@@ -13,47 +13,58 @@ import filmografia.beans.BeanError;
 import filmografia.controlador.Accion;
 
 public class AccionConsulta implements Accion {
+	
+	private ServletContext sc;
+	private DataSource ds;
+	private HttpSession sesion;
+	private BeanError error;
+	
+	
+	public AccionConsulta(){
+				
+	}
 
 	@Override
 	public boolean ejecutar(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
 	@Override
 	public String getVista() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public Object getModelo() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
 	public void setSc(ServletContext sc) {
-		// TODO Auto-generated method stub
+		this.sc = sc;
 		
 	}
 
 	@Override
 	public BeanError getError() {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return error;
 	}
 
 	@Override
 	public void setDs(DataSource ds) {
-		// TODO Auto-generated method stub
 		
+		this.ds = ds;
 	}
 
 	@Override
 	public void setSesion(HttpSession sesion) {
-		// TODO Auto-generated method stub
+		
+		this.sesion = sesion;
 		
 	}
 
