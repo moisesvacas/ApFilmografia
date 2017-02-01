@@ -13,7 +13,7 @@ import filmografia.beans.BeanError;
 import filmografia.controlador.Accion;
 
 public class AccionConsulta implements Accion {
-	
+	private String vista;
 	private ServletContext sc;
 	private DataSource ds;
 	private HttpSession sesion;
