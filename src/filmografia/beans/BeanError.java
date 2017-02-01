@@ -17,12 +17,12 @@ public class BeanError extends Exception implements Serializable {
 	private static final long serialVersionUID = 889504704847326741L;
 	
 	/**
-	 * Información del código del error
+	 * Atributo que nos indica el codigo de error
 	 */
 	private int codigoError;
 	
 	/**
-	 * Información del mensaje del error
+	 * Propiedad que nos indica el mensaje de error
 	 */
 	private String mensajeError;
 	
