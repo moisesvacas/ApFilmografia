@@ -13,6 +13,11 @@ import filmografia.beans.BeanError;
 import filmografia.controlador.Accion;
 
 public class AccionConsulta implements Accion {
+	
+	private final String vistaEncontrado = "WEB-INF/mostrar.jsp";
+	private final String vistaError = "WEB-INF/gesError.jsp";
+	private final String vistaNoEncontrado = "WEB-INF/mensaje.jsp";
+	
 	private String vista;
 	private ServletContext sc;
 	private DataSource ds;
@@ -28,13 +33,19 @@ public class AccionConsulta implements Accion {
 	public boolean ejecutar(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		return false;
+		boolean respuesta = false;
+		
+		return respuesta;
 	}
 
 	@Override
 	public String getVista() {
 		
 		return null;
+	}
+	
+	public void setVista(String vista){
+		this.vista = vista;
 	}
 
 	@Override
